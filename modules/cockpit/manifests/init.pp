@@ -7,8 +7,8 @@ class cockpit {
 			ensure => running,
 			enable => true, 
 			require => Package['cockpit'],
-}
-                file {'/etc/cockpit/cockpit.conf' :
+  }
+   file {'/etc/cockpit/cockpit.conf' :
 			ensure => present,
 			owner  => 'root',
 			group => 'root',
